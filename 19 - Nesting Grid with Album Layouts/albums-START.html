@@ -97,6 +97,23 @@
 
 
   <style>
+    /* start off with the actual grid: the album */
+    .albums {
+      display: grid;
+      /*how wide should eact grid template be */
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-gap: 20px;
+    }
+    /* your grid item can also be the grid container at the exact same time */
+    .album {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      /* even tho .album is itself a grid item, we can display-grid and make colums */
+      display: grid;
+      grid-template-columns: 150px 1fr; 
+      grid-gap: 10px;
+    }
   </style>
 </body>
 
