@@ -101,7 +101,7 @@
     .albums {
       display: grid;
       /*how wide should eact grid template be */
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 20px;
     }
     /* your grid item can also be the grid container at the exact same time */
@@ -113,6 +113,13 @@
       display: grid;
       grid-template-columns: 150px 1fr; 
       grid-gap: 10px;
+      align-items: center;
+      color: white;
+      font-weight: 100;
+    }
+
+    .album__artwork {
+      width: 100%
     }
   </style>
 </body>
