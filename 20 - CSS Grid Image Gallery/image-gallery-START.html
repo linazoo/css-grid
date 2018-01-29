@@ -59,7 +59,27 @@
     }
     .item {
       overflow: hidden;
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: 1;
     }
+
+    .item img {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .item__overlay {
+      background: #ffc60032;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      position: relative;
+      display: grid;
+    }
+
     .item.v2 {
       grid-row: span 2;
     }  
