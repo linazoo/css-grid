@@ -40,12 +40,27 @@ h6 {
 
 .codepen > * {
   border: 1px solid black;
+  color: white;
 }
+
+/* EDITOR! */
 
 .code {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
+  background: #1b2b34;
 }
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 5px;
+  grid-gap: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/*PEN Header */
 
 .pen {
   display: grid;
@@ -91,4 +106,5 @@ h6 {
   left: 3px;
   top: 3px;
 }
+
 
